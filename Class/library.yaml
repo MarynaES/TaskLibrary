@@ -1,0 +1,23 @@
+---
+:books:
+- &2 !ruby/object:Book
+  title: Woyna i mir
+  author: &1 !ruby/object:Author
+    name: Lev Tolstoy
+    biography: ''
+    year_birth: 1828
+  description: aaaaa
+:authors:
+- *1
+:readers:
+- &3 !ruby/object:Reader
+  name: Иванов А.П.
+  age: 22
+  address: г.Днепр, ул.Светлая, 15
+  phone: "+38 22233344"
+  email: asd@i.ua
+:orders:
+- !ruby/object:Order
+  date: 2019-06-06 23:37:07.552222330 +03:00
+  book: *2
+  reader: *3
