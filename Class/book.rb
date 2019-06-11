@@ -9,7 +9,7 @@ class Book
     end
 
     def get_info
-        @info="Книга - название: #{@title}, автор: #{@author.name}, описание: #{@description}"
+        info="Книга - название: #{@title}, автор: #{@author.name}, описание: #{@description}"
     end
 
 end

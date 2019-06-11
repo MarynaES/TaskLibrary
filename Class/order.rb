@@ -9,7 +9,7 @@ class Order
     end
 
     def get_info
-        @info="Заказ - книга: #{@book.title}, автор: #{@book.author.name}, читатель: #{@reader.name}, дата: #{@date.strftime("%d/%m/%Y")}"
+        info="Заказ - книга: #{@book.title}, автор: #{@book.author.name}, читатель: #{@reader.name}, дата: #{@date.strftime("%d/%m/%Y")}"
     end
 
 end

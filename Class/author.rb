@@ -16,7 +16,7 @@ class Author
     end
 
     def get_info
-        @info="Автор - фамилия: #{@name}, год рожд.: #{@year_birth}, биография: #{@biography}"
+        info="Автор - фамилия: #{@name}, год рожд.: #{@year_birth}, биография: #{@biography}"
     end
 end
     

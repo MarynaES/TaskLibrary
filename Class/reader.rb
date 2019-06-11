@@ -10,7 +10,12 @@ class Reader
      end
 
     def age=(ageVar)
-        @age=ageVar unless ageVar < 18
+        if ageVar < 18
+            raise ageVar.to_s + " - недопустимый возраст!"
+        else
+            @age=ageVar # unless ageVar < 18
+        end
+   
     end
 
     def phone=(phoneVar)
@@ -18,6 +23,6 @@ class Reader
     end
 
     def get_info
-        @info="Читатель - фамилия: #{@name}, возраст: #{@age}, адрес: #{@address}, телефон: #{@phone}"
+        info="Читатель - фамилия: #{@name}, возраст: #{@age}, адрес: #{@address}, телефон: #{@phone}"
     end
 end
