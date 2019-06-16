@@ -55,29 +55,35 @@
   year_birth: 1828
 :readers:
 - &6 !ruby/object:Reader
-  name: Иванов А.П.
+  name: Ivanov A.P.
   age: 22
-  address: г.Днепр, ул.Светлая, 15
+  address: Dnipro, Svetlaya str. 15
   phone: "+38 22233344"
   email: asd@i.ua
 - &7 !ruby/object:Reader
-  name: Петрова Н.О.
+  name: Petrova N.O.
   age: 34
-  address: г.Днепр, ул.Тихвинская, 3
+  address: Dnipro, Tihvinskaya str. 3
   phone: "+38 5675433"
   email: sss@i.ua
 - &4 !ruby/object:Reader
-  name: Остапова И.М.
+  name: Ostapova I.M.
   age: 50
-  address: г.Днепр, ул.Виноградная, 65
+  address: Dnipro, Vinogradnaya str. 65
   phone: "+38 82736456"
   email: rfbgh@i.ua
 - &10 !ruby/object:Reader
-  name: Сидорчук Г.П.
+  name: Sidorchuk G.P.
   age: 43
-  address: г.Днепр, ул.Янтарная, 88/32
+  address: Dnipro, Yanternaya str., 88/32
   phone: "+38 29487372"
   email: jdrty@i.ua
+- !ruby/object:Reader
+  name: Afanasov A.
+  age: 46
+  address: Dnipro, Ribinskaya str. 12/3
+  phone: "+38050 5849385"
+  email: rteg@i.ua
 :orders:
 - !ruby/object:Order
   date: 2019-06-11 00:46:57.848164254 +03:00

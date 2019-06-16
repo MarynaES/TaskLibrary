@@ -3,17 +3,20 @@ require_relative 'Class/author.rb'
 require_relative 'Class/reader.rb'
 require_relative 'Class/order.rb'
 require_relative 'Class/library.rb'
-require "yaml"
+require 'yaml'
 
-l=Library.new
+l = Library.new
+
 l.popular_book
 l.active_reader(2)
+l.readers_popular_books(3)
 
 #  l.add(Author.new('Nesterova N.',"",1958))
 #  l.add(Author.new('Ustinova T.',"",1962))
 #  l.add(Author.new('Shevchenko T.',"",1814))
 #  l.add(Author.new('Pushkin A.',"",1799))
 #  l.add(Author.new('Tolstoy L.',"",1828))
+#  l.add(Author.new('Tols',"",2028))
 
 # l.save
 
@@ -31,10 +34,16 @@ l.active_reader(2)
 #  l.add(Book.new("Dubrovskiy",a))
 #  l.add(Book.new("Pikovaya dama",a))
 
-#  l.add(Reader.new('Иванов А.П.', 22, "г.Днепр, ул.Светлая, 15", "+38 22233344", "asd@i.ua"))
-#  l.add(Reader.new('Петрова Н.О.', 34, "г.Днепр, ул.Тихвинская, 3", "+38 5675433", "sss@i.ua"))
-#  l.add(Reader.new('Остапова И.М.', 50, "г.Днепр, ул.Виноградная, 65", "+38 82736456", "rfbgh@i.ua"))
-#  l.add(Reader.new('Сидорчук Г.П.', 43, "г.Днепр, ул.Янтарная, 88/32", "+38 29487372", "jdrty@i.ua"))
+#   l.add(Reader.new("Ivanov A.", 22, "Dnipro, Svetlaya str. 15",
+#                    "+38 22233344", "asd@i.ua"))
+#   l.add(Reader.new('Petrova N.', 34, "Dnipro, Tihvinskaya str. 3", 
+#                     "+38 5675433", "sss@i.ua"))
+#   l.add(Reader.new('Ostapova I.', 50, "Dnipro, Vinogradnaya str. 65",
+#                     "+38 82736456", "rfbgh@i.ua"))
+#   l.add(Reader.new('Tretyak S.', 35, "Dnipro, Yantarnaya str. 88/24", 
+#                    "+381 3454372", "jdrty@i.ua"))
+#   l.add(Reader.new('Afanasov A.', 46, "Dnipro, Ribinskaya str. 12/3", 
+#                    "+38050 5849385", "rteg@i.ua"))
 
 # l.add(Order.new(Time.new,l.books[4],l.readers[2]))
 #  l.add(Order.new(Time.new-10,l.books[2],l.readers[0]))
@@ -46,10 +55,8 @@ l.active_reader(2)
 # l.add(Order.new(Time.new-1500,l.books[2],l.readers[3]))
 # l.add(Order.new(Time.new-20000,l.books[1],l.readers[3]))
 
-
 # order1=Order.new(Time.new,book1, r)
 # puts order1.get_info
 
 #l.save
-puts l.get_info_entity
-
+puts l.put_info_entity
