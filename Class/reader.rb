@@ -1,6 +1,5 @@
-# класс Читатель
 class Reader
-  attr_accessor :name, :age, :address, :phone, :email
+  attr_reader :name, :age, :address, :phone, :email
 
   def initialize(name, age_var, address, phone_var, email)
     @name = name
@@ -11,18 +10,13 @@ class Reader
   end
 
   def age=(age_var)
-    if age_var < 18
-      raise age_var.to_s + " - invalid age!"
-    end
-    @age = age_var 
+    raise age_var.to_s + ' - invalid age!' if age_var < 18
+    @age = age_var
   end
 
   def phone=(phone_var)
-    if (phone_var =~ /^[+]/) == nil
-      raise phone_var + " - invalid phone (first character must be +)"
-    end
+    raise phone_var + ' - invalid phone (first character must be +)' if (phone_var =~ /^[+]/) == nil
     @phone = phone_var
-    #@phone = phone_var unless (phone_var =~ /^[+]/).nil?
   end
 
   def to_s

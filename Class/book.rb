@@ -1,8 +1,7 @@
 class Book
-  attr_accessor :title, :description
-  attr_reader :author
+  attr_reader :title, :author, :description
 
-  def initialize(title, author, description = "")
+  def initialize(title, author, description = '')
     @title = title
     @author = author
     @description = description
@@ -11,5 +10,4 @@ class Book
   def to_s
     "Book - title: #{@title}, author: #{@author.name}, description: #{@description}"
   end
-
 end

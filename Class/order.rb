@@ -1,7 +1,6 @@
-# class Order 
+# class Order
 class Order
-  attr_accessor :date
-  attr_reader :book, :reader
+  attr_reader :date, :book, :reader
 
   def initialize(date, book, reader)
     @date = date

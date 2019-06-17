@@ -7,22 +7,22 @@
     biography: ''
     year_birth: 1958
   description: ''
-- &8 !ruby/object:Book
+- &9 !ruby/object:Book
   title: Sibiryaki
   author: *1
   description: ''
-- &5 !ruby/object:Book
+- &6 !ruby/object:Book
   title: Fantazerka
   author: *1
   description: ''
-- &9 !ruby/object:Book
+- &10 !ruby/object:Book
   title: Metel
   author: &2 !ruby/object:Author
     name: Pushkin A.
     biography: ''
     year_birth: 1799
   description: ''
-- &3 !ruby/object:Book
+- &4 !ruby/object:Book
   title: Evgeniy Onegin
   author: *2
   description: ''
@@ -37,6 +37,13 @@
 - !ruby/object:Book
   title: Pikovaya dama
   author: *2
+  description: ''
+- !ruby/object:Book
+  title: Otci i deti
+  author: &3 !ruby/object:Author
+    name: Turgenev
+    biography: ''
+    year_birth: 1818
   description: ''
 :authors:
 - *1
@@ -53,71 +60,86 @@
   name: Tolstoy L.
   biography: ''
   year_birth: 1828
+- *3
 :readers:
-- &6 !ruby/object:Reader
+- &7 !ruby/object:Reader
   name: Ivanov A.P.
   age: 22
   address: Dnipro, Svetlaya str. 15
   phone: "+38 22233344"
   email: asd@i.ua
-- &7 !ruby/object:Reader
+- &8 !ruby/object:Reader
   name: Petrova N.O.
   age: 34
   address: Dnipro, Tihvinskaya str. 3
   phone: "+38 5675433"
   email: sss@i.ua
-- &4 !ruby/object:Reader
+- &5 !ruby/object:Reader
   name: Ostapova I.M.
   age: 50
   address: Dnipro, Vinogradnaya str. 65
   phone: "+38 82736456"
   email: rfbgh@i.ua
-- &10 !ruby/object:Reader
+- &11 !ruby/object:Reader
   name: Sidorchuk G.P.
   age: 43
   address: Dnipro, Yanternaya str., 88/32
   phone: "+38 29487372"
   email: jdrty@i.ua
-- !ruby/object:Reader
+- &13 !ruby/object:Reader
   name: Afanasov A.
   age: 46
   address: Dnipro, Ribinskaya str. 12/3
   phone: "+38050 5849385"
   email: rteg@i.ua
+- &12 !ruby/object:Reader
+  name: Bondar
+  age: 38
+  address: Novomoskovsk, Pobedi str., 26
+  phone: "+38067 6463552"
+  email: lfkgh@gmail.com
 :orders:
 - !ruby/object:Order
   date: 2019-06-11 00:46:57.848164254 +03:00
-  book: *3
-  reader: *4
+  book: *4
+  reader: *5
 - !ruby/object:Order
   date: 2019-06-11 00:46:47.848172648 +03:00
-  book: *5
-  reader: *6
+  book: *6
+  reader: *7
 - !ruby/object:Order
   date: 2019-06-11 00:46:37.848179009 +03:00
-  book: *3
-  reader: *7
+  book: *4
+  reader: *8
 - !ruby/object:Order
   date: 2019-06-11 00:46:52.848183304 +03:00
-  book: *3
-  reader: *6
-- !ruby/object:Order
-  date: 2019-06-11 00:46:27.848187776 +03:00
-  book: *8
+  book: *4
   reader: *7
 - !ruby/object:Order
-  date: 2019-06-11 00:46:46.848192323 +03:00
+  date: 2019-06-11 00:46:27.848187776 +03:00
   book: *9
-  reader: *10
+  reader: *8
+- !ruby/object:Order
+  date: 2019-06-11 00:46:46.848192323 +03:00
+  book: *10
+  reader: *11
 - !ruby/object:Order
   date: 2019-06-10 22:00:17.848197347 +03:00
-  book: *8
-  reader: *10
+  book: *9
+  reader: *11
 - !ruby/object:Order
   date: 2019-06-11 00:21:57.848201448 +03:00
-  book: *5
-  reader: *10
+  book: *6
+  reader: *11
 - !ruby/object:Order
   date: 2019-06-10 19:13:37.848205366 +03:00
-  book: *8
-  reader: *10
+  book: *9
+  reader: *11
+- !ruby/object:Order
+  date: 2019-06-17 00:00:27.764723263 +03:00
+  book: *10
+  reader: *12
+- !ruby/object:Order
+  date: 2019-06-17 13:16:08.908189083 +03:00
+  book: *6
+  reader: *13
